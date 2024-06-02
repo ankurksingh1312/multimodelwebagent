@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive YouTube Iframe</title>
+    <title>Web Agent</title>
     <style>
-        .video-container {
+        .container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
         }
-        .video-container iframe {
+        .container iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -21,8 +21,7 @@
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <!-- Replace VIDEO_ID with the actual YouTube video ID -->
+    <div class="container">
         <iframe src="https://multimodelwebagen-fe.vercel.app/" frameborder="0" allowfullscreen></iframe>
     </div>
 </body>

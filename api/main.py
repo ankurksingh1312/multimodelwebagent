@@ -14,3 +14,4 @@ class handler(BaseHTTPRequestHandler):
 
 def main(req, res):
     return handler(req, res)
+

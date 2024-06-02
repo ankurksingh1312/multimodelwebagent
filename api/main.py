@@ -8,6 +8,7 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         current_dir = os.path.dirname(__file__)
         html_file_path = os.path.join(current_dir, 'html', 'index.html')
+         # Open the HTML file in binary read mode
         with open(html_file_path, 'rb') as file:
             html_content = file.read()
         self.wfile.write(html_content)
